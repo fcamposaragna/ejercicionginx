@@ -1,0 +1,19 @@
+puerto-> --port (numero)
+modo-> --modo (modo)
+
+Revisión de procesos de node
+tasklist /fi "imagename eq node.exe"
+
+Eliminiar proceso
+taskkill /pid (numero del proceso)
+
+Modo fork-> node app --modo fork || node app
+Modo cluster-> node app --modo cluster
+
+PM2
+modo fork-> pm2 start app.js
+modo cluster-> pm2 start app.js -i max
+Detener procesos-> pm2 delete all
+Listar procesos-> pm2 list
+Por so -> tasklist /fi "imagename eq node.exe"
+Eliminiar proceso-> taskkill /pid (numero del proceso)
